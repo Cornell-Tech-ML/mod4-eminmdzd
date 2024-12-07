@@ -90,11 +90,13 @@ class Conv1dFun(Function):
         """Compute a 1D convolution.
 
         Args:
+        ----
             ctx (Context): Autodiff context.
             input (Tensor): Input of shape [batch, in_channel, width].
             weight (Tensor): Weights of shape [out_channel, in_channel, k_width].
 
         Returns:
+        -------
             Tensor: Output of shape [batch, out_channel, width].
 
         """
@@ -225,11 +227,13 @@ class Conv2dFun(Function):
         """Compute a 2D convolution.
 
         Args:
+        ----
             ctx (Context): Autodiff context.
             input (Tensor): Input tensor of shape [batch, in_channel, height, width].
             weight (Tensor): Weight tensor of shape [out_channel, in_channel, k_height, k_width].
 
         Returns:
+        -------
             Tensor: Output tensor of shape [batch, out_channel, height, width].
 
         """
